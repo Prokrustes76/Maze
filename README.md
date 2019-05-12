@@ -1,2 +1,0 @@
-# beginnerStuff
-Beginner Stuff (JS)
