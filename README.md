@@ -1,0 +1,2 @@
+# Maze
+Beginner Stuff (JS)
