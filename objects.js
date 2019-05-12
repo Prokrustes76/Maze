@@ -106,8 +106,10 @@ class Player {
 	move(direction) {
 		let x = Math.cos(this.direction) * direction
 		let y = Math.sin(this.direction) * direction
-		if (map.checkCollision(x+this.x,y+this.y)) 
-			return
+		for (let i = -3; i < 4; i++)
+			for (let j = -3; j < 4; j++)
+				if (map.checkCollision(x+this.x+i,y+this.y+j)) 
+					return
 		this.x += x
 		this.y += y
 	}
